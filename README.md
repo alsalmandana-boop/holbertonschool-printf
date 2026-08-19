@@ -36,7 +36,7 @@ This project is a custom implementation of the standard `printf` function in C. 
 ### Prototype
 ```c
 int _printf(const char *format, ...);
-
+```
 ## File Structure
 
 * main.h: Header file containing function prototypes and definitions.
@@ -68,5 +68,4 @@ int main(void)
 
 ## Authors
 
-Renad Fouad Albatati
-Dana Ibrahim Alsalman
+Dana Ibrahim Alsalman , Renad Fouad Albatati
