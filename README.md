@@ -39,11 +39,11 @@ int _printf(const char *format, ...);
 ```
 ## File Structure
 
-* main.h: Header file containing function prototypes and definitions.
+* main.h: Header file containing function prototypes and structure definitions.
 
 * _printf.c: Main entry function for parsing the format string.
 
-* _putchar.c: Helper function to write characters to standard output using write.
+* _putchar.c: Helper function to write characters to stdout using write.
 
 * README.md: Project documentation.
 
@@ -52,6 +52,7 @@ To compile the project alongside a main.c file, use:
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c -o printf
 
 ## Example Usage (main.c)
+```
 #include "main.h"
 
 int main(void)
@@ -65,7 +66,13 @@ int main(void)
     _printf("Percent:[%%]\n");
     return (0);
 }
+```
+## Testing Notes
+* Test edge cases such as NULL strings, unknown specifiers, and consecutive % signs.
+  
+* The -Wno-format flag is included during compilation to suppress GCC warnings regarding standard printf format arguments for a custom function.
 
 ## Authors
 
-Dana Ibrahim Alsalman , Renad Fouad Albatati
+* Dana Ibrahim Alsalman
+* Renad Fouad Albatati
